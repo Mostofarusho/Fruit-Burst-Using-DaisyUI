@@ -37,10 +37,21 @@
             color: rgb(18, 18, 18);
         }
         
+        .bg-custom-star {
+            color: rgb(248, 85, 89);
+        }
+        
         .fruit-box {
             border-radius: 8px;
             box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.05);
             /* background: #f3f4f6; */
+        }
+        
+        .fruit-details-box {
+            box-sizing: border-box;
+            border: 1px solid rgba(18, 18, 18, 0.1);
+            border-radius: 8px;
+            background: rgb(255, 255, 255);
         }
     </style>
 </head>
@@ -286,6 +297,96 @@
                         sec
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Fruit Details Section  -->
+        <section class="py-8 lg:py-16">
+            <!-- Main div  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Card One  -->
+                <div class="card  w-full  fruit-details-box">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="text-2xl font-bold header-color">12.90$ - 18.85$ </h2>
+                        <p class="fruit-name-color text-sm">Apples</p>
+                        <!-- Star Div  -->
+                        <div class="flex gap-2 bg-custom-star text-2xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fruit-name-color text-sm">Details</p>
+
+                    </div>
+                </div>
+                <!-- Card Two  -->
+                <div class="card  w-full  fruit-details-box">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit7.png" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="text-2xl font-bold header-color">12.90$ - 18.85$ </h2>
+                        <p class="fruit-name-color text-sm">Oranges</p>
+                        <!-- Star Div  -->
+                        <div class="flex gap-2 bg-custom-star text-2xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fruit-name-color text-sm">Details</p>
+
+                    </div>
+                </div>
+                <!-- Card Three  -->
+                <div class="card  w-full  fruit-details-box">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit8.png" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="text-2xl font-bold header-color">12.90$ - 18.85$ </h2>
+                        <p class="fruit-name-color text-sm">Red Dragon</p>
+                        <!-- Star Div  -->
+                        <div class="flex gap-2 bg-custom-star text-2xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fruit-name-color text-sm">Details</p>
+
+                    </div>
+                </div>
+                <!-- Card Four  -->
+                <div class="card  w-full  fruit-details-box">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-4">
+                        <h2 class="text-2xl font-bold header-color">12.90$ - 18.85$ </h2>
+                        <p class="fruit-name-color text-sm">Banana</p>
+                        <!-- Star Div  -->
+                        <div class="flex gap-2 bg-custom-star text-2xl">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="fruit-name-color text-sm">Details</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Button Div  -->
+            <div class="flex items-center justify-center mt-4 ">
+                <button class="text-xl text-white font-extrabold bg-custom-button py-2 lg:py-5 px-5 lg:px-8">Shop All</button>
             </div>
         </section>
     </main>
