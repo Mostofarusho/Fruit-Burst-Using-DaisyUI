@@ -33,6 +33,10 @@
             color: rgba(18, 18, 18, 0.8);
         }
         
+        .header-color {
+            color: rgb(18, 18, 18);
+        }
+        
         .fruit-box {
             border-radius: 8px;
             box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.05);
@@ -246,7 +250,45 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main class="md:container mx-auto">
+        <!-- Deal of the day Section  -->
+        <section class="py-8 lg:py-16">
+            <!-- Main Div  -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="space-y-4">
+                    <h1 class="header-color text-5xl font-extrabold">Deal of the day</h1>
+                    <p class="fruit-name-color text-xl font-semibold">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- Count Down Div  -->
+                <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-bold">
+      <span style="--value:15;" aria-live="polite" aria-label="15">15</span>
+                        </span>
+                        days
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-bold">
+      <span style="--value:10;" aria-live="polite" aria-label="10">10</span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-bold">
+      <span style="--value:24;" aria-live="polite" aria-label="24">24</span>
+                        </span>
+                        min
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-bold">
+      <span style="--value:59;" aria-live="polite" aria-label="59">59</span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde commodi, voluptates excepturi doloremque nemo laudantium laborum laboriosam autem ut inventore iusto aut. Nostrum cupiditate laboriosam dolore id omnis. Voluptatem veritatis aspernatur,
