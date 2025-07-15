@@ -23,6 +23,21 @@
             border-radius: 600px;
             background: rgb(248, 85, 89);
         }
+        
+        .bg-custom-button {
+            border-radius: 8px;
+            background: rgb(248, 85, 89);
+        }
+        
+        .fruit-name-color {
+            color: rgba(18, 18, 18, 0.8);
+        }
+        
+        .fruit-box {
+            border-radius: 8px;
+            box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.05);
+            /* background: #f3f4f6; */
+        }
     </style>
 </head>
 
@@ -34,7 +49,7 @@
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle block lg:hidden">
                         <i class="fa-solid fa-bars text-white text-3xl"></i>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg> -->
+
                     </div>
                     <div class="list-none hidden lg:flex items-center justify-center gap-4  text-white text-xl">
                         <li><a>Home</a></li>
@@ -53,7 +68,7 @@
             <div class="navbar-center justify-start lg:justify-center flex-1">
                 <div class="flex items-center justify-center gap-4">
                     <img src="./images/logo.png" alt="">
-                    <h1 class="text-4xl font-bold text-white">Fruit Burst</h1>
+                    <h1 class="text-2xl lg:text-4xl font-bold text-white">Fruit Burst</h1>
                 </div>
 
             </div>
@@ -67,9 +82,187 @@
 
             </div>
         </div>
+        <!-- Carousal Section  -->
+        <div class="carousel w-full mb-10 py-20">
+            <!-- Slide 1  -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="./images/banner1.png" class="w-full" />
+                <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-center text-white">
+                    <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+                    <p class="text-lg md:text-xl font-semibold">We supply highly quality organic products</p>
+                    <button class="text-xl font-extrabold bg-custom-button py-2 lg:py-5 px-5 lg:px-8">Shop Now</button>
+                </div>
+                <div class="hidden lg:flex absolute bottom-[-80px] left-1/2 -translate-x-1/2  items-center justify-center gap-4 fruit-box bg-gray-300 p-4 ">
+                    <!-- Fruit One -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit1.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Graph</p>
+                    </div>
+                    <!-- Fruit Two -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit2.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Orange</p>
+                    </div>
+                    <!-- Fruit Three -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit3.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Mango</p>
+                    </div>
+                    <!-- Fruit Four -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit4.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Strawberry</p>
+                    </div>
+                    <!-- Fruit Five -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit5.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Pomegranate</p>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slide Two  -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./images/banner2.png" class="w-full" />
+                <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-center text-white">
+                    <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+                    <p class="text-lg md:text-xl font-semibold">We supply highly quality organic products</p>
+                    <button class="text-xl font-extrabold bg-custom-button py-2 lg:py-5 px-5 lg:px-8">Shop Now</button>
+                </div>
+                <div class="hidden lg:flex absolute bottom-[-80px] left-1/2 -translate-x-1/2  items-center justify-center gap-4 fruit-box bg-gray-300 p-4 ">
+                    <!-- Fruit One -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit1.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Graph</p>
+                    </div>
+                    <!-- Fruit Two -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit2.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Orange</p>
+                    </div>
+                    <!-- Fruit Three -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit3.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Mango</p>
+                    </div>
+                    <!-- Fruit Four -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit4.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Strawberry</p>
+                    </div>
+                    <!-- Fruit Five -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit5.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Pomegranate</p>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slide Three  -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="./images/banner3.png" class="w-full" />
+                <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-center text-white">
+                    <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+                    <p class="text-lg md:text-xl font-semibold">We supply highly quality organic products</p>
+                    <button class="text-xl font-extrabold bg-custom-button py-2 lg:py-5 px-5 lg:px-8">Shop Now</button>
+                </div>
+                <div class="hidden lg:flex absolute bottom-[-80px] left-1/2 -translate-x-1/2  items-center justify-center gap-4 fruit-box bg-gray-300 p-4 ">
+                    <!-- Fruit One -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit1.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Graph</p>
+                    </div>
+                    <!-- Fruit Two -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit2.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Orange</p>
+                    </div>
+                    <!-- Fruit Three -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit3.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Mango</p>
+                    </div>
+                    <!-- Fruit Four -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit4.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Strawberry</p>
+                    </div>
+                    <!-- Fruit Five -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit5.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Pomegranate</p>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slide Four  -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="./images/banner4.png" class="w-full" />
+                <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-center text-white">
+                    <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
+                    <p class="text-lg md:text-xl font-semibold">We supply highly quality organic products</p>
+                    <button class="text-xl font-extrabold bg-custom-button py-2 lg:py-5 px-5 lg:px-8">Shop Now</button>
+                </div>
+                <div class="hidden lg:flex absolute bottom-[-80px] left-1/2 -translate-x-1/2  items-center justify-center gap-4 fruit-box bg-gray-300 p-4 ">
+                    <!-- Fruit One -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit1.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Graph</p>
+                    </div>
+                    <!-- Fruit Two -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit2.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Orange</p>
+                    </div>
+                    <!-- Fruit Three -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit3.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Mango</p>
+                    </div>
+                    <!-- Fruit Four -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit4.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Strawberry</p>
+                    </div>
+                    <!-- Fruit Five -->
+                    <div class="flex flex-col items-center justify-center gap-2">
+                        <img src="./images/fruit5.png" alt="">
+                        <p class="fruit-name-color text-xl font-semibold">Pomegranate</p>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
     </header>
     <main></main>
     <footer></footer>
 </body>
+<div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde commodi, voluptates excepturi doloremque nemo laudantium laborum laboriosam autem ut inventore iusto aut. Nostrum cupiditate laboriosam dolore id omnis. Voluptatem veritatis aspernatur,
+    possimus recusandae consectetur adipisci, incidunt illum nisi fuga culpa dolorum. Fugiat quos pariatur amet inventore perspiciatis ex hic dolores. Temporibus, beatae, voluptatibus a ipsam aliquid hic numquam obcaecati velit magni laudantium delectus.
+    Atque fugit sint, vero illum accusantium beatae esse perspiciatis quae? Vitae quod ab laborum soluta quos labore ratione nisi molestiae fuga aperiam est natus blanditiis velit similique obcaecati ipsa earum quasi quas ex maiores doloribus laboriosam,
+    optio neque repellat? Rerum totam, tempora illo officiis consequuntur praesentium et reprehenderit illum iusto quia vero expedita dolores. Rem aliquid provident, ipsam totam doloribus ad. Molestias error fuga aliquid at fugiat, harum libero voluptate
+    sit praesentium delectus recusandae sapiente eum magni iusto a omnis minus aspernatur dolores similique blanditiis! Aut nemo rem non debitis labore at cum voluptate fugit, id nulla aspernatur unde neque veniam deserunt impedit aperiam suscipit voluptas,
+    exercitationem alias ea corrupti officiis! Amet non iste illo sit hic, saepe ea! Dolorem eligendi, atque vel repellendus, cupiditate quaerat magnam natus distinctio qui aliquid labore aliquam expedita quae dignissimos quasi adipisci, recusandae aperiam
+    totam amet id! Error maxime laboriosam quibusdam, placeat tempora eum assumenda dolores amet suscipit sunt et deserunt fugiat modi fugit accusamus iure est mollitia temporibus? Rerum, dignissimos. Sint praesentium velit corporis totam dolore quae
+    magnam iure non eos nulla ducimus fugiat obcaecati id consequatur, hic enim dicta ipsam voluptatum sequi temporibus, neque fuga laudantium esse. Alias quam temporibus laborum enim harum debitis quaerat. Temporibus necessitatibus illum obcaecati odit
+    a corporis aliquid quo iure quidem inventore, blanditiis iste itaque incidunt dicta laborum nesciunt voluptatibus sed sunt maxime. Architecto adipisci totam voluptate quidem sint iusto ea odit tempora eaque, necessitatibus odio illum, fugit doloremque
+    ipsa. Aperiam ad, quis voluptates sapiente provident, architecto fugit qui illo ipsam, excepturi nihil at. Tempora, ab! Aliquid eveniet ex esse voluptas praesentium minus error culpa autem, molestias perspiciatis dolorum quo quasi nisi? Vero nostrum
+    expedita eos laudantium. Eaque perspiciatis enim itaque ipsa rerum suscipit in dignissimos quibusdam deserunt doloribus laborum a eum vel vero voluptatum, nostrum magnam natus tenetur consequuntur culpa nihil debitis accusamus! Amet explicabo rerum
+    doloremque voluptate velit expedita fugiat enim, aspernatur nobis dolores mollitia saepe delectus, facilis quaerat. Nobis cum rem, nulla, velit et iure reiciendis reprehenderit provident ullam sint voluptatem recusandae neque aliquid saepe. Voluptatibus
+    nesciunt autem, vel, quam ullam quo culpa sequi quia enim quas delectus odit, velit tempore beatae nisi esse eos quos officia vitae voluptatem magnam earum ad ipsam nostrum? Sunt voluptates esse in vero alias aut maxime nam, aliquam excepturi sint
+    temporibus enim. Blanditiis aliquid, veniam, error neque, ipsa omnis totam necessitatibus ad at similique rem doloribus ut libero. Aliquam est cum nam sequi, ab qui deserunt dicta, commodi doloribus dignissimos incidunt reprehenderit tempora explicabo
+    saepe rem repudiandae fuga nostrum, doloremque impedit ipsum? Recusandae cum fuga corrupti omnis vel, dicta non quibusdam. Tempora, nam deserunt?</div>
 
 </html>
